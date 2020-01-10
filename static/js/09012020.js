@@ -15,13 +15,13 @@ $("#bell").click(function(){
 
 
 // Popup window
-function newPopup() {
+function popup() {
 	popupWindow = window.open("", "MsgWindow", "width=300,height=200");
     popupWindow.document.write("<br><br><hr><p style=\"text-align: center;\">player1 is ready to play at the room 1!</p><hr>" );
 }
 
 //Desktop Notification
-function notifyMe() {
+function deviceNotificationSetUp() {
   var initial_message="Hi there! We will notify you on recent player activities on lightning-poker.com";
   if (!("Notification" in window)) {
     alert("This browser does not support desktop notification");

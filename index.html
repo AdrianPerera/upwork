@@ -922,7 +922,7 @@
             <div></div>
 
             <button style="justify-self: right" class="MuiButtonBase-root MuiButton-root MuiButton-text "
-                    onclick="notifyMe()" title="allow device notifications">
+                    onclick="deviceNotificationSetUp()" title="allow device notifications">
                 <i class="fa fa-desktop" style="font-size:22px;"></i>
             </button>
 
@@ -1081,11 +1081,8 @@
     </div>
 </main>
 
-<p><a onclick="newPopup()">Open a popup window</a></p>
-<label class="switch">
-    <input type="checkbox">
-    <span class="slider round"></span>
-</label>
+<p><a onclick="popup()">Open a popup window</a></p>
+
 <script>
 !function (p) {
     function e(e) {
