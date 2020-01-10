@@ -18,8 +18,8 @@
     <link rel="manifest" href="/manifest.json">
     <title>Bitcoin Lightning Poker</title>
     <link href="/static/css/main.e5a7b205.chunk.css" rel="stylesheet">
-<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"-->
-<!--          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+    <link href="/static/css/10012020.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style data-jss="" data-meta="MuiCssBaseline">
         html {
@@ -56,6 +56,13 @@
         body::backdrop {
             background-color: #fafafa;
         }
+
+
+
+
+
+
+
 
 
 
@@ -121,6 +128,13 @@
         .MuiDrawer-paperAnchorDockedBottom {
             border-top: 1px solid rgba(0, 0, 0, 0.12);
         }
+
+
+
+
+
+
+
 
 
 
@@ -208,6 +222,13 @@
 
 
 
+
+
+
+
+
+
+
     </style>
     <style data-jss="" data-meta="MuiButtonBase">
         .MuiButtonBase-root {
@@ -239,6 +260,13 @@
             cursor: default;
             pointer-events: none;
         }
+
+
+
+
+
+
+
 
 
 
@@ -501,6 +529,13 @@
 
 
 
+
+
+
+
+
+
+
     </style>
     <style data-jss="" data-meta="MuiSvgIcon">
         .MuiSvgIcon-root {
@@ -548,6 +583,13 @@
 
 
 
+
+
+
+
+
+
+
     </style>
     <style data-jss="" data-meta="MuiTable">
         .MuiTable-root {
@@ -575,11 +617,25 @@
 
 
 
+
+
+
+
+
+
+
     </style>
     <style data-jss="" data-meta="MuiTableBody">
         .MuiTableBody-root {
             display: table-row-group;
         }
+
+
+
+
+
+
+
 
 
 
@@ -681,11 +737,25 @@
 
 
 
+
+
+
+
+
+
+
     </style>
     <style data-jss="" data-meta="MuiTableHead">
         .MuiTableHead-root {
             display: table-header-group;
         }
+
+
+
+
+
+
+
 
 
 
@@ -708,11 +778,25 @@
 
 
 
+
+
+
+
+
+
+
     </style>
     <style data-jss="" data-meta="makeStyles">
         .jss102 {
             color: red;
         }
+
+
+
+
+
+
+
 
 
 
@@ -816,6 +900,13 @@
 
 
 
+
+
+
+
+
+
+
     </style>
 </head>
 <body>
@@ -830,15 +921,20 @@
             </svg></span><span class="MuiTouchRipple-root"></span></button>
             <div></div>
 
-            <button style="justify-self: right" class="MuiButtonBase-root MuiButton-root MuiButton-text " onclick="notifyMe()">Notify me!</button>
+            <button style="justify-self: right" class="MuiButtonBase-root MuiButton-root MuiButton-text "
+                    onclick="notifyMe()" title="allow device notifications">
+                <i class="fa fa-desktop" style="font-size:22px;"></i>
+            </button>
 
             <button id="bell" class="MuiButtonBase-root MuiButton-root MuiButton-text notification jss102" tabindex="0"
-                    type="button" title="table notifications are disabled"><span class="MuiButton-label"><svg
-                    class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"
-                    role="presentation">
-                <path d="M20 18.69L7.84 6.14 5.27 3.49 4 4.76l2.8 2.8v.01c-.52.99-.8 2.16-.8 3.42v5l-2 2v1h13.73l2 2L21 19.72l-1-1.03zM12 22c1.11 0 2-.89 2-2h-4c0 1.11.89 2 2 2zm6-7.32V11c0-3.08-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68c-.15.03-.29.08-.42.12-.1.03-.2.07-.3.11h-.01c-.01 0-.01 0-.02.01-.23.09-.46.2-.68.31 0 0-.01 0-.01.01L18 14.68z"></path>
-            </svg></span><span class="MuiTouchRipple-root"></span>
-<!--                <span class="num">&bull;</span>-->
+                    type="button" title="table notifications are disabled"><span class="MuiButton-label">
+<!--                <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"-->
+                <!--                    role="presentation">-->
+                <!--                <path d="M20 18.69L7.84 6.14 5.27 3.49 4 4.76l2.8 2.8v.01c-.52.99-.8 2.16-.8 3.42v5l-2 2v1h13.73l2 2L21 19.72l-1-1.03zM12 22c1.11 0 2-.89 2-2h-4c0 1.11.89 2 2 2zm6-7.32V11c0-3.08-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68c-.15.03-.29.08-.42.12-.1.03-.2.07-.3.11h-.01c-.01 0-.01 0-.02.01-.23.09-.46.2-.68.31 0 0-.01 0-.01.01L18 14.68z"></path>-->
+                <!--                </svg>-->
+                <i class="fa fa-bell" style="font-size:22px;" aria-hidden="true"></i>
+            </span><span class="MuiTouchRipple-root"></span>
+                <!--                <span class="num">&bull;</span>-->
             </button>
 
         </header>
@@ -854,6 +950,7 @@
                 <th class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight" scope="col">rake %</th>
                 <th class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight" scope="col">pot</th>
                 <th class="MuiTableCell-root MuiTableCell-head" scope="col">round</th>
+                <th class="MuiTableCell-root MuiTableCell-head" scope="col">subscribe this table</th>
             </tr>
             </thead>
             <tbody class="MuiTableBody-root">
@@ -864,6 +961,12 @@
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body">waiting</td>
+                <td class="MuiTableCell-root MuiTableCell-body">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </td>
             </tr>
             <tr class="MuiTableRow-root MuiTableRow-hover">
                 <td class="MuiTableCell-root MuiTableCell-body" scope="row">2/4</td>
@@ -872,6 +975,10 @@
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body">waiting</td>
+                <td class="MuiTableCell-root MuiTableCell-body"><label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label></td>
             </tr>
             <tr class="MuiTableRow-root MuiTableRow-hover">
                 <td class="MuiTableCell-root MuiTableCell-body" scope="row">3/6</td>
@@ -880,6 +987,10 @@
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body">waiting</td>
+                <td class="MuiTableCell-root MuiTableCell-body"><label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label></td>
             </tr>
             <tr class="MuiTableRow-root MuiTableRow-hover">
                 <td class="MuiTableCell-root MuiTableCell-body" scope="row">8/16</td>
@@ -888,6 +999,10 @@
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body">waiting</td>
+                <td class="MuiTableCell-root MuiTableCell-body"><label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label></td>
             </tr>
             <tr class="MuiTableRow-root MuiTableRow-hover">
                 <td class="MuiTableCell-root MuiTableCell-body" scope="row">10/20</td>
@@ -896,6 +1011,10 @@
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body">waiting</td>
+                <td class="MuiTableCell-root MuiTableCell-body"><label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label></td>
             </tr>
             <tr class="MuiTableRow-root MuiTableRow-hover">
                 <td class="MuiTableCell-root MuiTableCell-body" scope="row">25/50</td>
@@ -904,6 +1023,10 @@
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">1</td>
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body">waiting</td>
+                <td class="MuiTableCell-root MuiTableCell-body"><label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label></td>
             </tr>
             <tr class="MuiTableRow-root MuiTableRow-hover">
                 <td class="MuiTableCell-root MuiTableCell-body" scope="row">50/100</td>
@@ -912,6 +1035,10 @@
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">1</td>
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body">waiting</td>
+                <td class="MuiTableCell-root MuiTableCell-body"><label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label></td>
             </tr>
             <tr class="MuiTableRow-root MuiTableRow-hover">
                 <td class="MuiTableCell-root MuiTableCell-body" scope="row">100/200</td>
@@ -920,6 +1047,10 @@
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">1</td>
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body">waiting</td>
+                <td class="MuiTableCell-root MuiTableCell-body"><label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label></td>
             </tr>
             <tr class="MuiTableRow-root MuiTableRow-hover">
                 <td class="MuiTableCell-root MuiTableCell-body" scope="row">200/400</td>
@@ -928,6 +1059,10 @@
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">1</td>
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body">waiting</td>
+                <td class="MuiTableCell-root MuiTableCell-body"><label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label></td>
             </tr>
             <tr class="MuiTableRow-root MuiTableRow-hover">
                 <td class="MuiTableCell-root MuiTableCell-body" scope="row">500/1000</td>
@@ -936,6 +1071,10 @@
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">1</td>
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body">waiting</td>
+                <td class="MuiTableCell-root MuiTableCell-body"><label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label></td>
             </tr>
             </tbody>
         </table>
@@ -943,6 +1082,10 @@
 </main>
 
 <p><a onclick="newPopup()">Open a popup window</a></p>
+<label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+</label>
 <script>
 !function (p) {
     function e(e) {
@@ -1004,6 +1147,13 @@
 }([])
 
 
+
+
+
+
+
+
+
 </script>
 
 
@@ -1021,7 +1171,6 @@
 
 <script src="/static/js/09012020.js"></script>
 <script>
-
 
 
 </script>
