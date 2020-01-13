@@ -6,14 +6,6 @@ function getValuesForModal(){
     $('#myModal').modal('toggle');
 }
 
-$("#bell").click(function(){
-//    var tableNo="";
-//    var playerId="";
-//    window.alert(playerId+ " is ready to play at the table "+tableNo);
-    window.alert("Player1 is ready to play at the table JNpdG0tUuR63ZLdyMdCe");
- });
-
-
 // Popup window
 function popup() {
 	popupWindow = window.open("", "MsgWindow", "width=300,height=200");
