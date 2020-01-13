@@ -18,6 +18,8 @@ $("#bell").click(function(){
 function popup() {
 	popupWindow = window.open("", "MsgWindow", "width=300,height=200");
     popupWindow.document.write("<br><br><hr><p style=\"text-align: center;\">player1 is ready to play at the room 1!</p><hr>" );
+    var audio = new Audio('static/sounds/notify.mp3');
+    audio.play();
 }
 
 //Desktop Notification
@@ -28,6 +30,8 @@ function deviceNotificationSetUp() {
   }
   else if (Notification.permission === "granted") {
     var notification = new Notification(initial_message);
+    var audio = new Audio('static/sounds/notify.mp3');
+    audio.play();
   }
   else if (Notification.permission !== "denied") {
     Notification.requestPermission().then(function (permission) {
@@ -38,3 +42,4 @@ function deviceNotificationSetUp() {
   }
 
 }
+
