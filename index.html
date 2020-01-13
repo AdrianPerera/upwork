@@ -897,15 +897,9 @@
                 bottom: 24px;
             }
         }
-
-
-
-
-
-
-
-
-
+        .hide{
+        display:none;
+        }
 
     </style>
 </head>
@@ -921,9 +915,13 @@
             </svg></span><span class="MuiTouchRipple-root"></span></button>
             <div></div>
 
-            <button style="justify-self: right" class="MuiButtonBase-root MuiButton-root MuiButton-text "
+            <button id="bell-slash"  style="justify-self: right" class="MuiButtonBase-root MuiButton-root MuiButton-text hide"
+                    onclick="deviceNotificationSetUp()" title="deny device notifications">
+                <i class="fa fa-bell-slash" style="font-size:22px;"></i>
+            </button>
+            <button id="bell" style="justify-self: right" class="MuiButtonBase-root MuiButton-root MuiButton-text"
                     onclick="deviceNotificationSetUp()" title="allow device notifications">
-                <i class="fa fa-desktop" style="font-size:22px;"></i>
+                <i class="fa fa-bell" style="font-size:22px;color:#0fc70c"></i>
             </button>
 
         </header>
@@ -939,7 +937,7 @@
                 <th class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight" scope="col">rake %</th>
                 <th class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight" scope="col">pot</th>
                 <th class="MuiTableCell-root MuiTableCell-head" scope="col">round</th>
-                <th class="MuiTableCell-root MuiTableCell-head" scope="col">subscribe this table</th>
+                <th class="MuiTableCell-root MuiTableCell-head subscribe-tab hide hide hide" scope="col">subscribe this table</th>
             </tr>
             </thead>
             <tbody class="MuiTableBody-root">
@@ -950,7 +948,7 @@
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body">waiting</td>
-                <td class="MuiTableCell-root MuiTableCell-body">
+                <td class="MuiTableCell-root MuiTableCell-body subscribe-tab hide hide">
                     <label class="switch">
                         <input type="checkbox">
                         <span class="slider round"></span>
@@ -964,7 +962,7 @@
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body">waiting</td>
-                <td class="MuiTableCell-root MuiTableCell-body"><label class="switch">
+                <td class="MuiTableCell-root MuiTableCell-body subscribe-tab hide hide"><label class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
                 </label></td>
@@ -976,7 +974,7 @@
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body">waiting</td>
-                <td class="MuiTableCell-root MuiTableCell-body"><label class="switch">
+                <td class="MuiTableCell-root MuiTableCell-body subscribe-tab hide hide"><label class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
                 </label></td>
@@ -988,7 +986,7 @@
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body">waiting</td>
-                <td class="MuiTableCell-root MuiTableCell-body"><label class="switch">
+                <td class="MuiTableCell-root MuiTableCell-body subscribe-tab hide hide"><label class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
                 </label></td>
@@ -1000,7 +998,7 @@
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body">waiting</td>
-                <td class="MuiTableCell-root MuiTableCell-body"><label class="switch">
+                <td class="MuiTableCell-root MuiTableCell-body subscribe-tab hide hide"><label class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
                 </label></td>
@@ -1012,7 +1010,7 @@
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">1</td>
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body">waiting</td>
-                <td class="MuiTableCell-root MuiTableCell-body"><label class="switch">
+                <td class="MuiTableCell-root MuiTableCell-body subscribe-tab hide hide"><label class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
                 </label></td>
@@ -1024,7 +1022,7 @@
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">1</td>
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body">waiting</td>
-                <td class="MuiTableCell-root MuiTableCell-body"><label class="switch">
+                <td class="MuiTableCell-root MuiTableCell-body subscribe-tab hide"><label class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
                 </label></td>
@@ -1036,7 +1034,7 @@
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">1</td>
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body">waiting</td>
-                <td class="MuiTableCell-root MuiTableCell-body"><label class="switch">
+                <td class="MuiTableCell-root MuiTableCell-body subscribe-tab hide"><label class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
                 </label></td>
@@ -1048,7 +1046,7 @@
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">1</td>
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body">waiting</td>
-                <td class="MuiTableCell-root MuiTableCell-body"><label class="switch">
+                <td class="MuiTableCell-root MuiTableCell-body subscribe-tab hide"><label class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
                 </label></td>
@@ -1060,10 +1058,11 @@
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">1</td>
                 <td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">0</td>
                 <td class="MuiTableCell-root MuiTableCell-body">waiting</td>
-                <td class="MuiTableCell-root MuiTableCell-body"><label class="switch">
+                <td class="MuiTableCell-root MuiTableCell-body subscribe-tab hide"><label class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
-                </label></td>
+                </label>
+                </td>
             </tr>
             </tbody>
         </table>
@@ -1151,3 +1150,5 @@
 </body>
 </html>
 
+<!--TODO: Have to find the column generating method for game tabes-->
+<!--TODO: Need the back end API responses as a JSON to code the next in line tasks-->
